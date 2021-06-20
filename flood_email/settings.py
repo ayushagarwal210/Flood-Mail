@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'vvy5%_nulk3vvk+!qu&armovo2wc2gir&1ulbb7netp7xe#hif'
+SECRET_KEY = 'vvy5%_nulk3vvk+!qu&armovo2wc2gir&1ulbb7netp7xe#hif'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -34,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 ALLOWED_HOSTS = ['*']
 
 # *******Hosting*******
-SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 DATABASES = {
     'default': dj_database_url.config(
